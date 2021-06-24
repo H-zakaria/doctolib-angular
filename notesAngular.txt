@@ -1,0 +1,176 @@
+chakibbensari ->nom github pour voir le model du projet
+
+stage -> jobs@insy2s.com
+	voir cliss? /denis
+
+> node -v
+angular  applis monophagiques? page se charge une seule fois => Single Page Application SPA
+npm =node package management = composer
+verif si npm est déjà installé: ng --version sinon ->install: CLI = command line interface 
+composant qui permet de faciliter la creation, le binding..
+	      -g = global; 
+> npm install -g @angular/cli
+> npm uninstall -g angular-cli
+
+ng new nom_projet
+
+lancer server: ng serve
+polyfills-> rend le js/css compatible cross browser
+
+<app-root>: une balise custom d'angular
+
+dans app > app.component.ts
+
+@component = annotation config;
+
+export = rend la classe exportable
+@NgModule = cette classe represente un module
+
+dans declaration: 
+declarer les composants utilisables
+
+dans imports: 
+quels modules importer??
+
+dans bootstrap:
+definir quels composants on veut lancer qud tel module est lancé.
+
+localhost->charge html
+		->cli charge les bundles, injecte les bundles js dans html
+			->execution main.js ->bootstrap le module(AppModule)-> qui bootstrap AppComponent
+				->charge html/css/js du component;
+
+typeScript: 
+	-type: langage typé; version de js plus propre/strict qui sera transcrit en js.
+
+configurer bootstrap(fw) ->
+
+
+
+
+angular BINDING
+
+types de binding:
+1.binder du composant vers le template => envoyer des données qui vont s'afficher = "interpolation"  avec accolades {{marque}}
+2.binder du ts vers template = "property binding" = plus generic avec crochets: [[innerText]] = "marque"
+3.de template vers js -> "event binding" = click sur button -> appl d'une fonction en js
+4."double binding" => événement + affichage de qqchose ->[(ngModel)] = "proprieté"
+
+entre {{}} => on peut ecrire des expressions simples qui return une string ou qqch qui peut se transformer en string (pas de if/else)
+
+
+https://github.com/PatrickJS/awesome-angular
+https://github.com/PatrickJS/awesome-angular#video-tutorials
+https://medium.com/codingthesmartway-com-blog/using-bootstrap-with-angular-c83c3cee3f4a
+
+
+
+>Fonctionalités:
+-page d'acceuil
+-inscription
+-prendre rdv
+-annuler rdv
+-trouver un medecin selon specialité/ville
+-voir les rdvs
+-voir profil 
+
+utiliser bootstrap(fw) dans angular
+-> npm install bootstrap@4
+creation de :
+C:\Users\59013-18-20\Documents\Angular\angular1\node_modules\bootstrap\dist\css\bootstrap.css 
+aller sur angular.json
+"styles": [
+              "node_modules/bootstrap/dist/css/bootstrap.css",
+              "src/styles.css"
+            ],
+
+To include jQuery in Node, first install with npm.
+
+npm install jquery
+For jQuery to work in Node, a window with a document is required. Since no such window exists natively in Node, one can be mocked by tools
+ such as jsdom. This can be useful for testing purposes.
+
+const { JSDOM } = require( "jsdom" );
+const { window } = new JSDOM( "" );
+const $ = require( "jquery" )( window );
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
